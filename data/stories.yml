@@ -1,0 +1,47 @@
+version: "3.1"
+
+stories:
+  - story: happy_path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: provide_name
+        entities:
+          - name: John
+      - action: utter_ask_age
+      - intent: provide_age
+        entities:
+          - age: 25
+      - action: utter_ask_state
+      - intent: provide_state
+        entities:
+          - state: California
+      - action: utter_ask_mood
+      - intent: provide_mood
+        entities:
+          - mood: happy
+      - action: utter_ask_mood_rating
+      - intent: provide_mood_rating
+        entities:
+          - mood_rating: 7
+      - action: utter_ask_weather_impact
+      - intent: provide_weather_impact
+        entities:
+          - weather_impact: 5
+      - action: utter_reminder_offer
+      - intent: request_reminder
+        entities:
+          - reminder_text: "call my mom"
+          - reminder_date: "2023-06-22 17:00"
+      - action: action_set_reminder
+      - action: utter_reminder_set
+      - intent: thanks
+      - action: utter_thanks_response
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: cancel_reminder
+    steps:
+      - intent: cancel_reminder
+      - action: action_cancel_reminder
+      - action: utter_reminder_cancelled

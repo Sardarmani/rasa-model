@@ -1,0 +1,109 @@
+version: "3.1"
+
+intents:
+  - greet
+  - provide_name
+  - provide_age
+  - provide_state
+  - provide_mood
+  - provide_mood_rating
+  - provide_weather_impact
+  - request_reminder
+  - cancel_reminder
+  - goodbye
+  - thanks
+
+entities:
+  - name
+  - age
+  - state
+  - mood
+  - mood_rating
+  - weather_impact
+  - reminder_text
+  - reminder_date
+
+slots:
+  name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: name
+  age:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: age
+  state:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: state
+  mood:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: mood
+  mood_rating:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: mood_rating
+  weather_impact:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: weather_impact
+  reminder_text:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: reminder_text
+  reminder_date:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: reminder_date
+
+responses:
+  utter_greet:
+    - text: "Hello! I'm here to assist you. Let's start with your name. What is your name?"
+  utter_ask_age:
+    - text: "Nice to meet you {name}. How old are you?"
+  utter_ask_state:
+    - text: "Got it. Which state do you live in?"
+  utter_ask_mood:
+    - text: "How are you feeling today? Happy, Un-Happy, or Aggressive?"
+  utter_ask_mood_rating:
+    - text: "On a scale of 0 to 10, how {mood} are you?"
+  utter_ask_weather_impact:
+    - text: "On a scale of 0 to 10, how much does the weather affect your mood?"
+  utter_reminder_offer:
+    - text: "I can set reminders for you. What would you like to be reminded about and when?"
+  utter_reminder_set:
+    - text: "Reminder set for {reminder_date} with the message: {reminder_text}"
+  utter_reminder_cancelled:
+    - text: "Your reminder has been cancelled."
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"
+  utter_thanks_response:
+    - text: "You're welcome!"
+
+actions:
+  - action_set_reminder
+  - action_cancel_reminder
+  - action_store_data
+
+forms:
+  user_data_form:
+    required_slots:
+      - name
+      - age
+      - state
+      - mood
+      - mood_rating
+      - weather_impact
+
+session_config:
+  session_expiration_time: 120
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-age",
+      "2": "I-age",
+      "3": "L-age",
+      "4": "U-age",
+      "5": "B-mood_rating",
+      "6": "I-mood_rating",
+      "7": "L-mood_rating",
+      "8": "U-mood_rating",
+      "9": "B-name",
+      "10": "I-name",
+      "11": "L-name",
+      "12": "U-name",
+      "13": "B-state",
+      "14": "I-state",
+      "15": "L-state",
+      "16": "U-state",
+      "17": "B-weather_impact",
+      "18": "I-weather_impact",
+      "19": "L-weather_impact",
+      "20": "U-weather_impact",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-age": 1,
+      "I-age": 2,
+      "L-age": 3,
+      "U-age": 4,
+      "B-mood_rating": 5,
+      "I-mood_rating": 6,
+      "L-mood_rating": 7,
+      "U-mood_rating": 8,
+      "B-name": 9,
+      "I-name": 10,
+      "L-name": 11,
+      "U-name": 12,
+      "B-state": 13,
+      "I-state": 14,
+      "L-state": 15,
+      "U-state": 16,
+      "B-weather_impact": 17,
+      "I-weather_impact": 18,
+      "L-weather_impact": 19,
+      "U-weather_impact": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Hi there
+      - hy
+
+  - intent: provide_name
+    examples: |
+      - My name is [John](name)
+      - I'm [Sarah](name)
+      - It's [Michael](name)
+
+  - intent: provide_age
+    examples: |
+      - I am [25](age) years old
+      - I'm [30](age)
+      - [45](age)
+
+  - intent: provide_state
+    examples: |
+      - I live in [California](state)
+      - I'm from [Texas](state)
+      - [Florida](state)
+
+  - intent: provide_mood
+    examples: |
+      - I'm feeling happy
+      - I'm sad
+      - I'm angry
+      - Cool
+      - Good
+      - Excellent
+      - Great
+      - Bad
+      - Depressed
+      - Aggressive
+
+  - intent: provide_mood_rating
+    examples: |
+      - I am at a [7](mood_rating) on the happiness scale
+      - [4](mood_rating) for unhappiness
+      - [10](mood_rating) aggressive
+
+  - intent: provide_weather_impact
+    examples: |
+      - Weather affects me at a [5](weather_impact)
+      - I would say a [3](weather_impact)
+      - [8](weather_impact) on the scale
+
+  - intent: request_reminder
+    examples: |
+      - Remind me to call my mom at 5 PM
+      - Set a reminder for my meeting tomorrow at 10 AM
+      - Remind me to take my medicine at 8 AM
+
+  - intent: cancel_reminder
+    examples: |
+      - Cancel my reminder
+      - I don't need the reminder anymore
+      - Remove the reminder
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - Goodbye
+      - See you later
+
+  - intent: thanks
+    examples: |
+      - Thanks
+      - Thank you
+      - Appreciate it

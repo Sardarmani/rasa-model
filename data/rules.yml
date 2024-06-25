@@ -1,0 +1,65 @@
+version: "3.1"
+
+rules:
+  - rule: greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: ask for age
+    steps:
+      - action: utter_greet
+      - intent: provide_name
+      - action: utter_ask_age
+
+  - rule: ask for state
+    steps:
+      - action: utter_ask_age
+      - intent: provide_age
+      - action: utter_ask_state
+
+  - rule: ask for mood
+    steps:
+      - action: utter_ask_state
+      - intent: provide_state
+      - action: utter_ask_mood
+
+  - rule: ask for mood rating
+    steps:
+      - action: utter_ask_mood
+      - intent: provide_mood
+      - action: utter_ask_mood_rating
+
+  - rule: ask for weather impact
+    steps:
+      - action: utter_ask_mood_rating
+      - intent: provide_mood_rating
+      - action: utter_ask_weather_impact
+
+  - rule: offer reminder
+    steps:
+      - action: utter_ask_weather_impact
+      - intent: provide_weather_impact
+      - action: utter_reminder_offer
+
+  - rule: set reminder
+    steps:
+      - intent: request_reminder
+      - action: action_set_reminder
+      - action: utter_reminder_set
+
+  - rule: cancel reminder
+    steps:
+      - intent: cancel_reminder
+      - action: action_cancel_reminder
+      - action: utter_reminder_cancelled
+
+  - rule: thank user
+    steps:
+      - intent: thanks
+      - action: utter_thanks_response
+
+  - rule: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye

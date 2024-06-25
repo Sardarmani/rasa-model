@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-location",
+      "2": "I-location",
+      "3": "L-location",
+      "4": "U-location",
+      "5": "B-medical_facility",
+      "6": "I-medical_facility",
+      "7": "L-medical_facility",
+      "8": "U-medical_facility",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-location": 1,
+      "I-location": 2,
+      "L-location": 3,
+      "U-location": 4,
+      "B-medical_facility": 5,
+      "I-medical_facility": 6,
+      "L-medical_facility": 7,
+      "U-medical_facility": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

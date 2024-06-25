@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-age",
+      "2": "I-age",
+      "3": "L-age",
+      "4": "U-age",
+      "5": "B-mood",
+      "6": "I-mood",
+      "7": "L-mood",
+      "8": "U-mood",
+      "9": "B-name",
+      "10": "I-name",
+      "11": "L-name",
+      "12": "U-name",
+      "13": "B-reminder_time",
+      "14": "I-reminder_time",
+      "15": "L-reminder_time",
+      "16": "U-reminder_time",
+      "17": "B-state",
+      "18": "I-state",
+      "19": "L-state",
+      "20": "U-state",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-age": 1,
+      "I-age": 2,
+      "L-age": 3,
+      "U-age": 4,
+      "B-mood": 5,
+      "I-mood": 6,
+      "L-mood": 7,
+      "U-mood": 8,
+      "B-name": 9,
+      "I-name": 10,
+      "L-name": 11,
+      "U-name": 12,
+      "B-reminder_time": 13,
+      "I-reminder_time": 14,
+      "L-reminder_time": 15,
+      "U-reminder_time": 16,
+      "B-state": 17,
+      "I-state": 18,
+      "L-state": 19,
+      "U-state": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

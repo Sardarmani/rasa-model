@@ -1,0 +1,16 @@
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+
+tracker_store:
+  type: sql
+  dialect: "sqlite"  # or your database dialect (e.g., postgresql)
+  db: "rasa.db"  # specify the path to your SQLite database file
+  # If using other SQL databases, specify credentials and connection details
+  # username: "your_username"
+  # password: "your_password"
+  # host: "localhost"
+  # port: "5432"  # default port for PostgreSQL
+  # db: "rasa"  # your database name
+
+cors:
+  "*"
